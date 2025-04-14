@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for our app
+				calculator: {
+					bg: '#1A1F2C',
+					display: '#2D3748',
+					button: {
+						number: '#9b87f5',
+						operator: '#7E69AB',
+						action: '#6E59A5',
+						equals: '#8B5CF6'
+					}
+				},
+				form: {
+					bg: '#F8F9FA',
+					input: '#FFFFFF',
+					valid: '#10B981',
+					invalid: '#EF4444',
+					button: '#8B5CF6'
 				}
 			},
 			borderRadius: {
@@ -84,11 +103,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'button-press': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(0.95)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'button-press': 'button-press 0.2s ease-in-out'
 			}
 		}
 	},

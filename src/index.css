@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +99,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.calculator-display {
+  grid-column: span 4;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
