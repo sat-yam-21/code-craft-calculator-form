@@ -8,6 +8,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Calculator from "./pages/Calculator";
 import FormValidation from "./pages/FormValidation";
+import Welcome from "./pages/Welcome";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -18,10 +20,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          <Route path="/welcome" element={<Welcome />} />
+          <Route path="/about" element={<About />} />
           <Route path="/" element={<FormValidation />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/home" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
