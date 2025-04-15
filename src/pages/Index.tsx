@@ -26,7 +26,7 @@ const Index = () => {
             </div>
           </Link>
           
-          <Link to="/form" className="group">
+          <Link to="/" className="group">
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col">
               <h2 className="text-2xl font-semibold mb-3 text-purple-800 group-hover:text-purple-600">Form Validation</h2>
               <p className="text-gray-600 mb-4 flex-grow">
