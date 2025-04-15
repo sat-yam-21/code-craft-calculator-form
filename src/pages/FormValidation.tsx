@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { toast } from '@/components/ui/use-toast';
@@ -19,6 +18,8 @@ import {
  * A responsive user registration form with validation
  */
 const FormValidation: React.FC = () => {
+  const navigate = useNavigate();
+  
   // Form state
   const [formData, setFormData] = useState({
     fullName: '',
@@ -73,7 +74,7 @@ const FormValidation: React.FC = () => {
       // Form is valid, submit the data
       toast({
         title: 'Registration Successful!',
-        description: 'Your account has been created successfully.',
+        description: 'Your account has been created successfully. Redirecting to calculator...',
       });
       
       // Clear the form
@@ -84,6 +85,11 @@ const FormValidation: React.FC = () => {
         password: '',
         confirmPassword: '',
       });
+
+      // Redirect to calculator after a short delay
+      setTimeout(() => {
+        navigate('/calculator');
+      }, 2000);
     } else {
       // Form is invalid, show error
       toast({

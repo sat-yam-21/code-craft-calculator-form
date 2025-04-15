@@ -1,10 +1,9 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from '@/components/ui/use-toast';
 import { 
   Plus, Minus, Divide, Asterisk, 
-  Percent, SquareRoot, Equal, 
+  Percent, Equal, 
   RotateCcw, ArrowLeft, Home
 } from 'lucide-react';
 import CalculatorButton from '@/components/CalculatorButton';
