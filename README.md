@@ -1,40 +1,29 @@
-# Welcome to your Lovable project
 
-## Project info
+# 🚀 Welcome to my Project
 
-**URL**: https://lovable.dev/projects/1a1331f4-2c3f-4d6d-a891-dd84d9d3796a
+## 📦 Project Overview
 
-## How can I edit this code?
+This is your modern, high-performance web application — built with cutting-edge tools and a streamlined development stack. Whether you're working solo or collaborating with a team, this setup gives you complete control and flexibility.
 
-There are several ways of editing your application.
+## 🛠 How to Work on This Project
 
-**Use Lovable**
+### 1. Clone and Run Locally
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1a1331f4-2c3f-4d6d-a891-dd84d9d3796a) and start prompting.
+Get started quickly with your preferred development environment. Make sure you have **Node.js** and **npm** installed. If not, consider using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) for easy setup.
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Move into the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the local development server
 npm run dev
-```
+
 
 **Edit a file directly in GitHub**
 
@@ -59,15 +48,3 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1a1331f4-2c3f-4d6d-a891-dd84d9d3796a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
